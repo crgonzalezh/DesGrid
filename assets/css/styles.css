@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0 auto; 
+}
+
+aside {
+    grid-area: aside; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+}
+
+aside h5 {
+    margin: 5px 0; 
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+        "aside section"; 
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+.product-grid {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+
+
+.product-card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 450px;
+}
+
+.product-card figcaption {
+    position: absolute; 
+    bottom: 38px;
+    left: 0;
+    color: black; 
+    width: 100%; 
+    padding: 5px; 
+    text-align: center; 
+}
+.product-card figcaption h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px 0; 
+}
+
+.product-card figcaption p {
+    font-size: 16px;
+    margin: 0; 
+}
+.product-card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin: 0 auto; 
+    padding: 10px;
+    text-align: center;
+    margin: 5px 0; 
+    line-height: 0.5;
+}
